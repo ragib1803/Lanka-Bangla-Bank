@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
               $invalid=0;
                 session_start();
                 $_SESSION['ID']=$ID;
-                header('location:home.html');
+                header('location:dashboard.html');
             }
          }
       }    
@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     
             else{
                  $invalid=1;
-                
+                echo "<script>alert('Wrong Credentials'); window.location='login.html'</script></script>";
                
                 }
       }
